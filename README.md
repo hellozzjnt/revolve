@@ -34,6 +34,8 @@ Research topics via NotebookLM, store in Obsidian, evolve CLAUDE.md from accumul
 - [Sync Script][sync-section]
 - [Templates][templates-section]
 - [Configuration][config-section]
+- [Built With][built-with]
+- [Acknowledgments][acknowledgments]
 - [Contributing][contributing]
 - [License][license-section]
 
@@ -198,6 +200,44 @@ Full schema: [`docs/config-contract.md`][config-contract]
 
 </div>
 
+## Built With
+
+Revolve stands on the shoulders of these projects:
+
+| Project | Description | Role in Revolve |
+|---------|-------------|-----------------|
+| [Claude Code][claude-code] | Anthropic's AI coding CLI | Runtime — all skills execute inside Claude Code sessions |
+| [NotebookLM][notebooklm] | Google's free AI research and analysis tool | Analysis engine — processes YouTube, web, PDF sources into structured findings |
+| [notebooklm-mcp][nlm-mcp] | MCP server bridging Claude Code to NotebookLM | Integration layer — enables skills to call NotebookLM programmatically |
+| [Obsidian][obsidian] | Local-first Markdown knowledge base | Storage layer — research notes and synced conversations live here |
+| [yt-dlp][ytdlp] | YouTube metadata extractor CLI | Data collection — searches YouTube and retrieves video metadata |
+| [defuddle][defuddle] | Web page to clean Markdown extractor | Data collection — strips web pages to clean article text |
+| [Compound Engineering][ce-plugin] | AI-powered development workflow plugin by Kieran Klaassen / Every | Workflow enhancement — provides `/ce:plan`, `/ce:work`, `/ce:review` |
+| [Dataview][dataview] | Obsidian plugin for SQL-like note queries | Used in research index template for dynamic note listing |
+| [Templater][templater] | Obsidian template engine | Used in research note template for variable substitution |
+
+<div align="right">
+
+[![][back-to-top]][readme-top]
+
+</div>
+
+## Acknowledgments
+
+- [Kieran Klaassen](https://github.com/kieranklaassen) and [Every](https://every.to) — for [Compound Engineering][ce-plugin], the plugin framework and workflow methodology that inspired Revolve's architecture
+- [Google NotebookLM](https://notebooklm.google.com) team — for providing a free, powerful AI research tool that makes the flywheel possible
+- [notebooklm-mcp](https://github.com/sinjab/notebooklm-mcp) contributors — for bridging NotebookLM to the MCP ecosystem
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) maintainers — for the most reliable YouTube metadata extraction tool
+- [Obsidian](https://obsidian.md) team — for building the knowledge base that ties the flywheel together
+- [Anthropic](https://anthropic.com) — for Claude Code and the plugin system that makes this possible
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) — README structure inspiration
+
+<div align="right">
+
+[![][back-to-top]][readme-top]
+
+</div>
+
 ## Contributing
 
 Issues, feature requests, and PRs welcome.
@@ -222,6 +262,8 @@ Issues, feature requests, and PRs welcome.
 [sync-section]: #sync-script
 [templates-section]: #templates
 [config-section]: #configuration
+[built-with]: #built-with
+[acknowledgments]: #acknowledgments
 [contributing]: #contributing
 [license-section]: #license
 
@@ -240,11 +282,17 @@ Issues, feature requests, and PRs welcome.
 <!-- Links -->
 [license]: LICENSE
 [claude-code]: https://claude.ai/code
+[notebooklm]: https://notebooklm.google.com
+[nlm-mcp]: https://github.com/sinjab/notebooklm-mcp
 [obsidian]: https://obsidian.md
+[ytdlp]: https://github.com/yt-dlp/yt-dlp
+[defuddle]: https://github.com/nicekate/defuddle
 [install-url]: https://github.com/eisen0419/revolve
 [lang-en]: README.md
 [lang-zh]: README_CN.md
 [sync-docs]: scripts/README.md
 [config-contract]: docs/config-contract.md
 [ce-plugin]: https://github.com/EveryInc/compound-engineering-plugin
+[dataview]: https://github.com/blacksmithgu/obsidian-dataview
+[templater]: https://github.com/SilentVoid13/Templater
 [forge-repo]: https://github.com/eisen0419/forge
