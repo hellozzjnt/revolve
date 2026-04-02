@@ -590,7 +590,7 @@ Issues, feature requests, and PRs welcome.
 
 <!-- Images -->
 [banner]: images/banner.jpg
-[flywheel-diagram]: images/flywheel.jpg
+[flywheel-diagram]: images/flywheel.gif
 [back-to-top]: https://img.shields.io/badge/-Back_to_top-gray?style=flat-square
 
 <!-- Badges -->
